@@ -1,4 +1,74 @@
-h2 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+header .header-element {
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  height: 50px;
+}
+
+header .header-element img {
+  max-height: 50px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1a1a1a;
+}
+
+main .main-element {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main-element .card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(90% / 3);
+  margin: 10px 10px;
+  color: white;
+  background-color: black;
+}
+
+main .main-element .card img {
+  max-width: 150px;
+  margin-bottom: 5px;
+}
+
+main .main-element .card h3 {
+  margin: 5px auto;
 }
 

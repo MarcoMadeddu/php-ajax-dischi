@@ -1,0 +1,18 @@
+// H E A D E R //
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    .header-element{
+        display: flex;
+        align-items: flex-start;
+        width: 80%;
+        height: 50px;
+        img{
+            max-height: 50px;
+        }
+    }
+}
