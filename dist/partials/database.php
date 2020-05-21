@@ -10,7 +10,7 @@ $database = [
     [
         'poster' => "dist/img/shiva-pyrex.jpeg",
         'title' => 'Niente',
-        'author' => 'Giaime ft Pyrex',
+        'author' => 'Giaime',
         'year' => '2020',
     ],
 
@@ -24,14 +24,14 @@ $database = [
     [
         'poster' => "dist/img/marracash.jpeg",
         'title' => 'Sport',
-        'author' => 'Marracash & Luchè',
+        'author' => 'Marracash',
         'year' => '2019',
     ],
 
     [
         'poster' => "dist/img/shiva.png",
         'title' => 'Calmo',
-        'author' => 'Shiva & Tha Supreme',
+        'author' => 'Shiva',
         'year' => '2019',
     ],
 
@@ -45,21 +45,21 @@ $database = [
     [
         'poster' => "dist/img/gue.jpeg",
         'title' => 'Daily mix 1',
-        'author' => 'Gue e altri',
+        'author' => 'Gue',
         'year' => '2020',
     ],
 
     [
         'poster' =>"dist/img/tha-supreme.jpeg",
         'title' => 'Daily mix 2',
-        'author' => 'Tha Supreme e altri',
+        'author' => 'Tha Supreme',
         'year' => '2020',
     ],
 
     [
         'poster' => "dist/img/ava.jpeg",
         'title' => 'Holly e Benji',
-        'author' => 'Shiva & CapoPlaza',
+        'author' => 'Shiva',
         'year' => '2019',
     ],
 ]

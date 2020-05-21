@@ -12,15 +12,17 @@
     <div class="app">
         <header>
             <div class="header-element">
-                <img src="dist/img/logo-small.svg" alt="">
+               <img id="home" src="dist/img/logo-small.svg" alt="">
             </div>
         </header>
 
         <main>
         <input class="input" type="text" placeholder="Cerca un'artista">
+         <h2 class="result"></h2>
             <div class="main-element">
                 
             </div>
+            
         </main>
 
     </div>
