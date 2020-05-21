@@ -36,10 +36,33 @@ header .header-element img {
 
 main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   background-color: #1a1a1a;
+}
+
+main .input {
+  margin: 40px auto;
+  padding: 10px;
+  width: 250px;
+  border: none;
+  text-align: center;
+  background-color: #1a1a1a;
+  border: 1px solid white;
+  border-radius: 10px;
+  opacity: 0.5;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  transition: opacity 0.5s, border 0.4s;
+}
+
+main .input:focus,
+main .input:hover {
+  opacity: 1;
+  border: 3px solid lightgreen;
 }
 
 main .main-element {
@@ -66,10 +89,10 @@ main .main-element .card {
 
 main .main-element .card img {
   max-width: 150px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 main .main-element .card h3 {
-  margin: 5px auto;
+  margin: 10px auto;
 }
 

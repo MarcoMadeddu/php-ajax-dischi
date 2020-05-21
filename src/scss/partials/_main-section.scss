@@ -1,10 +1,33 @@
 // M A I N  S E C T I O N //
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     background-color: #1a1a1a;
+
+    .input{
+        margin: 40px auto;
+        padding: 10px;
+        width: 250px;
+        border: none;
+        text-align: center;
+        background-color: #1a1a1a;
+        border: 1px solid white;
+        border-radius: 10px;
+        opacity: 0.5;
+        font-size: 20px;
+        color: white;
+        outline: none;
+        transition: opacity 0.5s , border 0.4s;
+        &:focus,
+        &:hover{
+            opacity: 1;
+            border:3px solid  lightgreen;
+
+        };
+    }
     .main-element{
         width: 80%;
         height: 100%;
@@ -25,10 +48,10 @@ main{
             background-color: black;
             img{
                 max-width: 150px;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
             }
             h3{
-                margin: 5px auto;
+                margin: 10px auto;
             }
         }
     }

@@ -17,6 +17,7 @@
         </header>
 
         <main>
+        <input class="input" type="text" placeholder="Cerca un'artista">
             <div class="main-element">
                 
             </div>
