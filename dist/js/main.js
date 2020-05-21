@@ -140,7 +140,7 @@ function run(list, template, status) {
 
 
 function searchRun(list, template, input, status, text) {
-  var value = input.val().trim();
+  var value = input.val().trim().toLowerCase();
   $.ajax({
     url: 'http://localhost:8888/php-ajax-dischi/dist/partials/db-json.php',
     method: 'GET',
@@ -156,8 +156,10 @@ function searchRun(list, template, input, status, text) {
 
 function getResults(data, list, template, value, status, text) {
   if (status) {
+    text.text("nessun risultato per:" + value);
+
     for (var i = 0; i < data.length; i++) {
-      if (value == data[i].author) {
+      if (value == data[i].author.toLowerCase()) {
         var current = data[i];
         var result = {
           poster: current.poster,
