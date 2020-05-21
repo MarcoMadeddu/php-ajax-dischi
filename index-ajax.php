@@ -6,6 +6,7 @@
     <title>Spotify with php</title>
      <!-- M A I N  C S S -->
      <link rel="stylesheet" href="dist/css/main.css">
+     
 </head>
 <body>
     <div class="app">
@@ -17,25 +18,21 @@
 
         <main>
             <div class="main-element">
-                <?php include_once __DIR__ . '/dist/partials/database.php' ?>
-
-                <?php foreach($database as $data) {?>
-                    <div class="card">
-                    <img src="<?php echo $data['poster']; ?>" alt="we">
-                    <h2><?php echo$data['title']; ?></h2>
-                    <h3><?php echo$data['author']; ?></h3>
-                    <h3><?php echo$data['year']; ?></h3>
-                    </div>
-                    
-
-                <?php } ?>
+                
             </div>
         </main>
 
     </div>
 
 
-
+    <script id="card-template" type="text/x-handlebars-template">
+     <div class="card">
+        <img src="{{poster}}" alt="we">
+        <h2>{{title}}</h2>
+        <h3>{{author}}</h3>
+        <h3>{{year}}</h3>
+     </div>
+    </script>
 
 
 
